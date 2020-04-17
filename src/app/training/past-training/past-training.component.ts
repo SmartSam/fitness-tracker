@@ -16,11 +16,14 @@ export class PastTrainingComponent implements OnInit, AfterViewInit {
   constructor(private trainingService: TrainingService) { }
 
   ngOnInit(){
-    this.dataSource.data = this.trainingService.getAllExercises();
+    this.dataSource.data = this.trainingService.getCompletedOrCancelledExercises();
   }
 
   ngAfterViewInit(){
     this.dataSource.sort = this.sort;
   }
 
+  filterData(filterValue: string){
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
 }
