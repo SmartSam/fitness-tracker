@@ -1,6 +1,6 @@
 # FitnessTracker
 
-This is work-in-progress with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
+This is a work-in-progress with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
 
 ## Development server
 
